@@ -10,3 +10,7 @@ import "channels"
 
 Rails.start()
 ActiveStorage.start()
+
+document.addEventListener("turbo:load", () => {
+  alert("turbo:load event triggered")
+})

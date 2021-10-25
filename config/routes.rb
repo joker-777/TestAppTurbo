@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get 'home/index', as: :index
+  get 'home/page1', as: :page1
+  get 'home/page2', as: :page2
+  root to: "home#index"
 end
