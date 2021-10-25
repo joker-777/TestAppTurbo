@@ -1,24 +1,6 @@
-# README
+# Test app to show case the trubo bug with redirects and turbo:load event
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Start the server `bundle exec rails s` and open the page `localhost:3000`. You
+will see a link which points to page 1 but then gets redirect to page 2. On the
+first page load you will see an alert which you then will see twice after
+clicking on this link.
